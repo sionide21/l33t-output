@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["ben.olive@gatech.edu"]
   gem.description   = %q{Make your output look l33t}
   gem.summary       = %q{Make your output look l33t}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/sionide21/l33t-output"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
