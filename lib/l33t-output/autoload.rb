@@ -5,7 +5,7 @@ module Kernel
   undef :puts
   def puts(*args)
     args.each do |arg|
-      arg.each_line do |l|
+      arg.to_s.each_line do |l|
         L33tOutput::Line.new(l).output
       end
     end
