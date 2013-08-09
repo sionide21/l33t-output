@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby -w
+lib = File.expand_path('../../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'l33t-output/autoload'
+
+File.open(ARGV.shift || $stdin.fileno) do |file|
+  file.each_line {|l| puts l}
+end

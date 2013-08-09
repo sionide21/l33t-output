@@ -2,6 +2,7 @@
 require 'l33t-output/line'
 
 module Kernel
+  undef :puts
   def puts(*args)
     args.each do |arg|
       arg.each_line do |l|
